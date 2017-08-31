@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/falcon1812/falconi.svg?branch=develop)](https://travis-ci.org/falcon1812/falconi)
+
 # falconi-com
 
 falconi marketing website built with **Next.js**.
