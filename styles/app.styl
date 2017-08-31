@@ -1,0 +1,660 @@
+@import url(//fonts.googleapis.com/css?family=Roboto:300,400,500,700)
+@import url(//fast.fonts.net/cssapi/ab8cd5b9-caf3-4ce3-9a77-d35f9b43901c.css)
+
+@import 'core/variables'
+@import 'core/reset'
+@import 'core/bootstrap'
+
+body
+  background-color $backgroundColor
+  font-family $fontFamilyBase
+  font-size 16px
+
+h1
+  font-family $fontFamilyHeaders
+  text-transform uppercase
+  padding-bottom 10px
+  margin-bottom 0
+  margin-top 34px
+  font-size 54px
+  line-height 0.85
+  @media $mediaL
+    font-size 85px
+
+h2
+  font-family $fontFamilyHeaders
+  text-transform uppercase
+
+h3
+  text-transform uppercase
+  font-size 30px
+  line-height 1.5
+h4
+  font-size 18px
+  line-height 1.39
+  font-weight 500
+  @media $mediaL
+    font-size 23px
+    line-height 1.82
+    font-weight 300
+h5
+  text-transform uppercase
+  font-size 16px
+  font-weight 300
+  line-height 1.5
+a
+  &:hover
+    text-decoration none
+
+.gc-button
+  padding 10px 15px
+  border none
+  cursor pointer
+  color $baseFontColorSecondary
+  transition opacity 0.2s ease
+  background-color $ctaColor
+  height 50px
+  font-weight 500
+  border-radius 4px
+  font-size 14px
+  letter-spacing 1px
+  text-transform uppercase
+  min-width 238px
+  @media $mediaL
+    min-width 150px
+    height 40px
+    font-size 13px
+  &:hover
+    opacity 0.9
+
+.gc-anchor
+  text-decoration none
+  &.purple
+    color $activeColor
+  &.pink
+    color $ctaColor
+
+.bg-white
+  background-color $baseFontColorSecondary
+.p-a-0
+  padding 0 !important
+.p-a-15
+  padding 15px !important
+.p-b-0
+  padding-bottom 0 !important
+.p-r-0
+  padding-right 0 !important
+.p-r-25
+  padding-right 25px !important
+.p-b-30
+  padding-bottom 30px !important
+.p-x-0
+  padding-left 0 !important
+  padding-right 0 !important
+.p-x-30
+  padding 30px 0 !important
+.m-b-0
+  margin-bottom 0 !important
+.m-b-30
+  margin-bottom 30px !important
+.m-b-80
+  margin-bottom 80px !important
+.full-width
+  width 100%
+
+.aligner
+  display flex
+  align-items center
+  justify-content center
+  .aligner-center
+    flex-none
+    max-width 50%
+
+.equal-height
+  @media $mediaL
+    display flex
+    flex-wrap wrap
+  &.flex
+    flex 1
+
+.gc-header
+  position fixed
+  width 100%
+  z-index 100
+
+  .gc-cookie-notice
+    display flex
+    justify-content space-between
+    align-items center
+    padding 17px
+    background-color $cookieBannerBG
+    color $baseFontColorSecondary
+    font-weight 500
+    font-size 13px
+    a
+      color $baseFontColorSecondary
+      text-decoration underline
+    .gc-cookie-close-button
+      cursor pointer
+      margin-left 20px
+
+  .gc-header-nav
+    background-color $baseFontColorSecondary
+    height 66px
+    display flex
+    flex-flow row
+    justify-content space-between
+    align-content center
+    align-items center
+    @media $mediaL
+      padding-right 15px
+    &.is-opened
+      box-shadow inset 0px -4px 0px 0px $activeColor
+
+    .gc-header-sections
+      display flex
+      order 2
+      flex 1 1 auto
+      margin 0
+      padding 0
+      .gc-header-section
+        font-size 15px
+        color #8b8b8b
+        height 66px
+        padding 0 30px
+        justify-content center
+        align-items center
+        display flex
+      a
+        transition background-color .3s ease, color .3s ease, box-shadow .3s ease
+        &.active
+          background-color $headerActiveBG
+          color $activeColor
+          font-weight 500
+          box-shadow inset 0px 4px 0px 0px $activeColor
+    .gc-header-links
+      display flex
+      order 3
+      text-align right
+      a
+        font-size 14px
+        font-weight 600
+        text-align right
+        padding-right 20px
+        &:last-child
+          padding-right 0px
+        &:hover
+          color $ctaColor
+      .sign-in
+        background-color transparent
+        box-shadow inset 0px 0px 0px 2px $ctaColor
+        color $ctaColor
+
+    .gc-menu-button
+      order 3
+      text-align right
+      .gc-hamburger-button
+        background-color $activeColor
+        border none
+        height 66px
+        width 66px
+        img
+          height 28px
+          width 28px
+  .gc-menu
+    height 100%
+    width 100%
+    position fixed
+    z-index 100
+    left 0
+    background-color $baseFontColorSecondary
+    transition 0.5s
+    overflow hidden
+    padding 2rem
+
+    .gc-menu-list
+      display flex
+      flex-direction column
+      align-content center
+      align-items left
+      padding 0
+      margin 0
+      list-style none
+      li
+        padding 5px 0
+      a
+        color $lightGrey
+        font-size 18px
+        line-height 2.62
+        &.gc-try-for-free, &.gc-sign-up
+          color $ctaColor
+
+.gc-section
+  padding 20px 0 40px 0
+  display block
+  width 100%
+  position relative
+  @media $mediaL
+    padding 40px 0 80px 0
+
+  .gc-section-title
+    font-size 36px
+    line-height 1.53
+    margin 20px 0
+    @media $mediaL
+      font-size 60px
+      line-height 0.92
+      margin 40px 0
+  .gc-section-content
+    font-weight 500
+    font-size 16px
+    line-height 2
+    margin-bottom 40px
+    @media $mediaL
+      font-size 20px
+      line-height 1.9
+
+.gc-section-bg-image
+  width 100%
+  color $baseFontColorSecondary
+  background-repeat no-repeat
+
+  .gc-section-content
+    color $baseFontColorSecondary
+
+  &.intro
+    height 100vh
+    background-image url('./static/images/intro.png')
+    background-position-x right
+    @media $mediaM
+      background-position-x center
+    @media $mediaL
+      background-size cover
+      background-position-x left
+    .gc-falconi-logo
+      width 174px
+
+.gc-section-bg-color
+  width 100%
+  color $baseFontColorSecondary
+  .gc-section-content
+    color $baseFontColorSecondary
+  &.what
+    color $baseFontColorSecondary
+    background-color $secondaryColor
+    .what-we-do
+      display flex
+      align-items center
+      flex-direction column
+      text-align center
+      @media $mediaL
+        flex-direction row
+        text-align left
+      .flex
+        flex 3
+        order 2
+        @media $mediaL
+          order 1
+      .image
+        flex 2
+        display flex
+        justify-content center
+        padding 25px
+        order 1
+        img
+          height 160px
+        @media $mediaL
+          order 2
+          padding 0
+          img
+            height 288px
+
+  &.customer-types
+    background-color $activeColor
+
+  &.testimonials
+    .large-testimonial
+      background-color $secondaryColor
+      display flex
+      flex-direction column
+      padding-top 40px
+      @media $mediaL
+        flex-direction row
+        padding-top 0
+      .quote
+        line-height 1.9
+        font-size 16px
+        padding 50px 15px 20px 20px
+        @media $mediaL
+          font-size 20px
+          padding 15px
+          text-align left
+      .quote-image
+        height 26px
+        @media $mediaL
+          height 45px
+      .job-title
+        padding 20px 15px 40px 15px
+        font-size 13px
+        line-height 1.2
+        text-align center
+        @media $mediaL
+          text-align left
+      .image
+        flex 1
+    .small-testimonials
+      color $baseFontColorPrimary
+      padding 39px 15px
+      @media $mediaL
+        padding 90px 1rem
+      .gc-testimonial-small
+        display flex
+        flex-direction column
+        align-items center
+        text-align center
+        @media $mediaL
+          flex-direction row
+          text-align left
+          align-items flex-start
+        img
+          border-radius 50%
+          height 93px
+          margin 0 15px 30px 15px
+          @media $mediaL
+            margin-right 20px
+            margin-bottom 0
+        .gc-job-title
+          font-weight 500
+          color $activeColor
+        &:first-child
+          padding-bottom 40px
+          @media $mediaL
+            padding 0 15px
+
+.gc-service
+  padding 20px 0
+  &:nth-child(2)
+    background-color $backgroundColor
+  .gc-service-image-container
+    position relative
+    .gc-service-img
+      padding 20px 0
+    .gc-service-free
+      vertical-align top
+      position absolute
+      top 25px
+      left 56%
+  .gc-service-title
+    padding 0
+    font-size 30px
+    font-family $fontFamilyHeaders
+  .gc-service-list
+    height 265px
+    line-height 2.8
+    font-size 17px
+    font-weight 300
+    padding 0
+    list-style none
+    color $grey
+    small
+      font-size 14px
+
+.gc-package
+  background-color $baseFontColorSecondary
+  border-radius 6px
+  margin-top 30px
+  margin-bottom 30px
+  padding 40px
+  @media $mediaL
+    margin-top 0
+    margin-bottom 0
+
+  .gc-package-title
+    font-size 25px
+    font-weight 600
+    color $baseFontColorPrimary
+    font-family $fontFamilyHeaders
+    text-transform uppercase
+    text-align center
+    padding-bottom 30px
+    @media $mediaL
+      font-size 30px
+      padding-bottom 40px
+
+  .gc-package-free
+    text-align left
+    .aligner
+      justify-content inherit
+      img
+        height 17px
+        padding-right 10px
+        @media $mediaL
+          height inherit
+    .gc-package-free-name
+      font-family $fontFamilyHeaders
+      text-transform uppercase
+      color $activeColor
+      font-size 18px
+      @media $mediaL
+        font-size 21px
+    .gc-package-free-desc
+      font-weight 300
+      color $lightGrey
+      line-height 1.47
+      padding 10px 0 20px 0
+      font-size 13px
+      @media $mediaL
+        font-size 15px
+  .gc-feature
+    background-color $backgroundColor
+    padding 23px 18px
+    margin-bottom 20px
+    &:last-child
+      margin-bottom 0
+    ul
+      list-style-type none
+      padding-top 20px
+      padding-left 0
+      li
+        padding-left 40px
+        margin-bottom 20px
+        font-size 14px
+        font-weight 300
+        color $lightGrey
+        line-height 1.29
+        background-image url('./static/icons/icon-tick.png')
+        background-repeat no-repeat
+        @media $mediaL
+          font-size 17px
+
+    .gc-feature-name
+      font-family $fontFamilyHeaders
+      text-transform uppercase
+      color $activeColor
+      font-size 18px
+      margin-bottom 16px
+      @media $mediaL
+        font-size 21px
+        line-height 1
+    .gc-price
+      font-family $fontFamilyHeaders
+      text-transform uppercase
+      color $activeColor
+      font-size 42px
+      margin 0
+      line-height 0.88
+      @media $mediaL
+        font-size 50px
+    .gc-small
+      font-size 10px
+      color $lightGrey
+      margin 0
+      @media $mediaL
+        font-size 12px
+
+.gc-customer-type
+  img
+    height 68px
+  &.selected
+    &:after
+      content " "
+      height 0
+      width 0
+      position absolute
+      pointer-events none
+      border solid transparent
+      border-bottom-color $backgroundColor
+      border-width 30px
+      margin-left -30px
+      left 50%
+      bottom 0
+
+  .gc-customer-title
+    font-family $fontFamilyHeaders
+    font-size 25px
+    margin 40px 0 24px 0
+    @media $mediaL
+      font-size 30px
+  .gc-customer-desc
+    font-size 17px
+    font-weight 300
+    padding-bottom 28px
+    @media $mediaL
+      height 90px
+      padding-bottom 0
+  .gc-button
+    margin-bottom 60px
+    &.gc-button-active
+      background-color transparent
+      box-shadow inset 0px 0px 0px 2px $ctaColor;
+      color $ctaColor
+
+
+.gc-customer-long-desc
+  color $baseFontColorPrimary
+  position relative
+  background-color $backgroundColor
+  font-size 16px
+  padding 50px 25px
+  line-height 2
+  text-align left
+
+  .customer-type-title
+    padding-left 1em
+    padding-bottom 20px
+    color $activeColor
+    font-size 18px
+    font-weight 500
+    line-height 1.78
+
+  ul
+    list-style none
+    padding 0
+    margin 0
+  li
+    padding-left 1em
+    margin-bottom 10px
+    line-height 1.62
+    font-weight 300
+
+.gc-logos
+  display flex
+  justify-content center
+  align-items center
+  flex-direction column
+  @media $mediaM
+    flex-direction row
+  img
+    flex none
+    margin-bottom 30px
+    max-width 80%
+
+.gc-mapsite-container
+  padding 50px 0 15px 0
+  @media $mediaL
+    padding 80px 0
+  background-color $baseFontColorSecondary
+  color $lightGrey
+  font-size 13px
+  line-height 1.85
+  letter-spacing 0.3px
+
+  .gc-copyright
+    display flex
+    font-weight 300
+    letter-spacing 0.3px
+    padding-top 20px
+    justify-content center
+    text-align center
+    align-items center
+    flex-direction column
+    p
+      max-width 203px
+      padding-top 20px
+    @media $mediaL
+      text-align left
+      align-items left
+
+
+  span
+    font-size 15px
+    font-weight 500
+    letter-spacing 0.3px
+    line-height 1.8
+    color $activeColor
+  ul
+    font-weight 500
+    padding 15px 0 0 0
+    list-style none
+    a
+      cursor pointer
+      color $lightGrey
+      &:hover
+        color $ctaColor
+    p
+      margin 0
+
+.gc-g-service
+  .flex-container
+    display flex
+    justify-content center
+    align-items center
+    flex-direction column
+    padding 0
+    @media $mediaL
+      flex-direction row
+    .flex
+      flex 1
+
+    .gc-growth-container
+      font-weight 300
+      margin-bottom 40px
+      text-align center
+      @media $mediaL
+        margin-bottom 0
+        text-align left
+      .gc-g-logo
+        padding-bottom 30px
+        img
+          height 50px
+          @media $mediaL
+            height auto
+      .title
+        font-size 16px
+        font-weight 500
+    	  line-height 1.5
+        @media $mediaL
+          font-size 20px
+      p
+        margin 10px 0 40px 0
+        font-size 14px
+        @media $mediaL
+          font-size initial
+          margin-right 10px
+
+    .gc-image-container
+      margin-left -15px
+      margin-right -15px
+      @media $mediaL
+        margin-left 0
+        margin-right 0

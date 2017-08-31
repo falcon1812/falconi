@@ -1,0 +1,9 @@
+.DS_Store
+.idea
+.tmp
+.git
+.settings
+*.log
+.vscode
+node_modules
+.next
