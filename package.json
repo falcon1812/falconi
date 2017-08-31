@@ -16,8 +16,8 @@
   "scripts": {
     "cleancache": "rm -rf node_modules/.cache/babel-loader",
     "dev": "npm run cleancache && next -p 80",
-    "build": "npm run cleancache && next build",
-    "start": "npm run cleancache && next start -p 80",
+    "build": "npm run cleancache && next build -p 80",
+    "start": "npm run cleancache && next start",
     "heroku-postbuild": "npm run cleancache && next build"
   },
   "keywords": [
