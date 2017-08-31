@@ -1,10 +1,10 @@
 {
   "name": "falconi-com",
-  "version": "2.3.0",
+  "version": "1.0.0",
   "description": "falconi marketing website",
   "author": "falconi Front-End Team <tech-team@falconi.com>",
-  "license": "UNLICENSED",
-  "private": true,
+  "license": "MIT",
+  "private": false,
   "repository": {
     "type": "git",
     "url": "https://github.org/falconi/falconi"
@@ -17,7 +17,8 @@
     "cleancache": "rm -rf node_modules/.cache/babel-loader",
     "dev": "npm run cleancache && next",
     "build": "npm run cleancache && next build",
-    "start": "npm run cleancache && next start"
+    "start": "npm run cleancache && next start",
+    "heroku-postbuild": "next build"
   },
   "keywords": [
     "Next.js",
