@@ -15,10 +15,10 @@
   },
   "scripts": {
     "cleancache": "rm -rf node_modules/.cache/babel-loader",
-    "dev": "npm run cleancache && next",
+    "dev": "npm run cleancache && next -p 80",
     "build": "npm run cleancache && next build",
-    "start": "npm run cleancache && next start",
-    "heroku-postbuild": "heroku-nextjs-build"
+    "start": "npm run cleancache && next start -p 80",
+    "heroku-postbuild": "npm run cleancache && next build"
   },
   "keywords": [
     "Next.js",
