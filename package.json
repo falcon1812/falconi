@@ -7,10 +7,11 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://bitbucket.org/falconi/falconi-com"
+    "url": "https://github.org/falconi/falconi"
   },
   "engines": {
-    "node": "7.10.0"
+    "node": "7.10.0",
+    "npm": "5.0.3"
   },
   "scripts": {
     "cleancache": "rm -rf node_modules/.cache/babel-loader",
