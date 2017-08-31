@@ -18,7 +18,7 @@
     "dev": "npm run cleancache && next",
     "build": "npm run cleancache && next build",
     "start": "npm run cleancache && next start",
-    "heroku-postbuild": "next build"
+    "heroku-postbuild": "heroku-nextjs-build"
   },
   "keywords": [
     "Next.js",
