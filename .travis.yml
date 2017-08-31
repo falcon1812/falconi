@@ -1,0 +1,8 @@
+language: node_js
+
+# test on node.js version: 7.10.0
+node_js:
+  - 7.10.0
+install:
+  - yarn install
+  - yarn build
