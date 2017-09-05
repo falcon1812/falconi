@@ -6,3 +6,5 @@ node_js:
 install:
   - yarn install
   - yarn build
+notifications:
+  email: false
