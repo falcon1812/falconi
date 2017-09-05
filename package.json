@@ -17,8 +17,8 @@
     "cleancache": "rm -rf node_modules/.cache/babel-loader",
     "dev": "npm run cleancache && next",
     "build": "npm run cleancache && next build",
-    "start": "npm run cleancache && next start -p 8080",
-    "heroku-postbuild": "next build -p 8080"
+    "start": "npm run cleancache && next start -p $PORT",
+    "heroku-postbuild": "next build"
   },
   "keywords": [
     "Next.js",
