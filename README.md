@@ -1,7 +1,7 @@
 
 
 # falconi-com 
-[![Build Status](https://travis-ci.org/falcon1812/falconi.svg?branch=develop)](https://travis-ci.org/falcon1812/falconi) [![Code Climate](https://codeclimate.com/github/falcon1812/falconi.png)](https://codeclimate.com/github/falcon1812/falconi) [![Made With Love](https://img.shields.io/badge/made%20with-%3C3-red.svg)](https://github.com/falcon1812/falconi)
+[![Build Status](https://travis-ci.org/falconi1812/falconi.svg?branch=develop)](https://travis-ci.org/falconi1812/falconi) [![Code Climate](https://codeclimate.com/github/falcon1812/falconi.png)](https://codeclimate.com/github/falcon1812/falconi) [![Made With Love](https://img.shields.io/badge/made%20with-%3C3-red.svg)](https://github.com/falcon1812/falconi)
 
 falconi marketing website built with **Next.js**.
 
