@@ -12,12 +12,14 @@ import Testimonials from 'components/Testimonials/Testimonials';
 import Team from 'components/Team/Team';
 import About from 'components/About/About';
 import Footer from 'components/Footer/Footer';
+import Calendar from 'components/Calendar/Calendar';
 
 const nav = {
   home      : { id: 'home',      label: 'Home' },
   how       : { id: 'how',       label: 'How we help you' },
   packages  : { id: 'packages',  label: 'Packages' },
   customers : { id: 'customers', label: 'Customers' },
+  calendar  : { id: 'calendar',  label: 'Calendar' },
   team      : { id: 'our-team',  label: 'Our team' },
   about     : { id: 'about',     label: 'About G' },
 };
@@ -50,6 +52,7 @@ export default class App extends Component {
         <Packages id={nav.packages.id} />
         <CustomerTypes id={nav.customers.id} />
         <Testimonials />
+        <Calendar id={nav.calendar.id} />
         <Team id={nav.team.id} />
         <About id={nav.about.id} />
         <Footer nav={nav} />
