@@ -31,6 +31,9 @@ analytics.page('Marketing Site', {
 });
 }}();`;
 
+// Chat
+const chat = `window.$crisp=[];window.CRISP_WEBSITE_ID="dce53f8c-b3c4-44c1-982b-47a8b918db77";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();`;
+
 export default class MyDocument extends Document {
 
   static getInitialProps ({ renderPage }) {
@@ -61,6 +64,7 @@ export default class MyDocument extends Document {
         </Head>
         <body className="gc-body">
           <script type='application/ld+json' dangerouslySetInnerHTML={{ __html: structuredData }} />
+          <script type='text/javascript' dangerouslySetInnerHTML={{ __html: chat }} />
           <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
           <Main />
           <NextScript />
