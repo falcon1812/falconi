@@ -91,8 +91,7 @@ export default class Header extends PureComponent {
           })}
         </ul>
         <ul className="gc-menu-list">
-          <li><a onClick={this.onClickTryItForFreeButton} href={LINKS.SIGNUP} className="gc-try-for-free" target="_blank" rel="noopener">Try it for free</a></li>
-          <li><a onClick={this.onClickSignInButton} href={LINKS.LOGIN} className="gc-sign-up" target="_blank" rel="noopener">Sign in</a></li>
+          <li><a onClick={this.onClickTryItForFreeButton} href={LINKS.BOOK} className="gc-try-for-free" target="_blank" rel="noopener">Book now for free</a></li>
         </ul>
       </nav>
     );
@@ -151,11 +150,8 @@ export default class Header extends PureComponent {
           </Scrollspy>
 
           <div className="gc-header-links hidden-xs hidden-sm">
-            <a href={LINKS.SIGNUP} onClick={this.onClickTryItForFreeButton} target="_blank" rel="noopener">
-              <button className="gc-button try-for-free gc-button-sm">Try it for Free</button>
-            </a>
-            <a href={LINKS.LOGIN} onClick={this.onClickSignInButton} target="_blank" rel="noopener">
-              <button className="gc-button sign-in gc-button-sm">Sign in</button>
+            <a href={LINKS.BOOK} onClick={this.onClickTryItForFreeButton} target="_blank" rel="noopener">
+              <button className="gc-button try-for-free gc-button-sm">Book now for free</button>
             </a>
           </div>
 

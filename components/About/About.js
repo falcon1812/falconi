@@ -16,8 +16,8 @@ export default class About extends Component {
 
           <div className="col-md-10 col-md-offset-1 flex-container">
             <div className="flex gc-growth-container">
-              <div className="gc-g-logo">
-                <img alt="G Logo" src="/static/logos/logo-g-transparent.png" />
+              <div className="gc-g-logo text-center aligner">
+                <img alt="Github" src="/static/logos/logo-g-transparent.png" />
               </div>
               <span className="title">Where growth happens.</span>
               <p>G brings together  ’s services for small businesses by providing access to tools, connections and services that help them achieve their ambitions.</p>
@@ -28,7 +28,7 @@ export default class About extends Component {
             </div>
 
             <div className="flex gc-image-container">
-              <img className="img-responsive full-width" alt="G Service" src="/static/images/office.jpg" />
+              <img className="img-responsive full-width" alt="G Service" src="/static/images/front-end-conftocat.png" />
             </div>
           </div>
 

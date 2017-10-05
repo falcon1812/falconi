@@ -32,7 +32,7 @@ export default class Services extends Component {
     }
 
     return (
-      <section className="gc-section bg-white text-center aligner">
+      <section id={this.props.id} className="gc-section bg-white text-center aligner">
         <div className="container">
           <div className="row">
             <div className="col-md-10 col-md-offset-1 aligner-center">

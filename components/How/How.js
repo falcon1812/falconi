@@ -17,8 +17,8 @@ export default class How extends Component {
               Give it a <a href={LINKS.SIGNUP} onClick={this.onClickExploreForFreeLink} className="gc-anchor pink" target="_blank" rel="noopener">try for free now</a>, and see how we can help to save you time and make your life simpler.
             </p>
           </div>
-          <img alt="falconi platform preview image" className="img-responsive" src="/static/images/how-we-do-it.png" />
         </div>
+        <img alt="falconi platform preview image" className="img-responsive full-width" src="/static/images/how-we-do-it.jpeg" />
       </section>
     )
   }

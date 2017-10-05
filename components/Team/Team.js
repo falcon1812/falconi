@@ -14,7 +14,7 @@ export default class Team extends Component {
             </p>
           </div>
         </div>
-        <img alt="Our team" className="img-responsive full-width" src="/static/images/team.jpg" />
+        <img alt="Our team" className="img-responsive full-width" src="/static/images/team.jpeg" />
       </section>
     )
   }

@@ -19,12 +19,12 @@ export default class What extends Component {
               <p className="gc-section-content">
                 Many small businesses are already experiencing the advantages of falconi. You can join them, and benefit from some of our services for free. It’s also <a href={LINKS.SIGNUP} onClick={this.onClickJoinUs} target="_blank" rel="noopener">free to sign up</a> so start experiencing falconi today.
               </p>
-              <a href={LINKS.SIGNUP} onClick={this.onClickJoinUs} target="_blank" rel="noopener">
-                <button className="gc-button try-for-free gc-button-sm">join us free today</button>
+              <a href={LINKS.BOOK} onClick={this.onClickJoinUs} target="_blank" rel="noopener">
+                <button className="gc-button try-for-free gc-button-sm">talk with us free today</button>
               </a>
             </div>
             <div className="image">
-              <img alt="falconi platform preview" className="img-responsive" src="/static/images/what-we-do.png" />
+              <img alt="falconi platform preview" className="img-responsive" src="/static/images/what-we-do.svg" />
             </div>
           </div>
         </div>

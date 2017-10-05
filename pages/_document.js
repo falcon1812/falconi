@@ -46,7 +46,7 @@ export default class MyDocument extends Document {
     return (
       <html lang="en-GB">
         <Head>
-          <title>falconi - Your online business service</title>
+          <title>Falconi</title>
           <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
           <meta name="description" content="Accounting, expenses, team management, legal, HR, payroll, company secretarial and more… all in one smart place." />
           <meta name="keywords" content="accountancy services, accountant, small business, bookkeeping, accounting consultancy, tax, filing, tax preparation, expenses, company secretarial, company administration, company admin, company manager, hr, human resource, resource management, payroll, benefits, advice, legal aid, lawyer, legal, solicitor, compliance" />

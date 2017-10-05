@@ -1,8 +1,8 @@
 export default [
   {
-    iconURL: './static/icons/icon-team.png',
+    iconURL: './static/icons/icon-idea.svg',
     title: 'TEAM MANAGEMENT',
-    isIncluded: true,
+    isIncluded: false,
     features: [
       'Employer dashboard',
       'Employee list',
@@ -13,9 +13,9 @@ export default [
     ],
   },
   {
-    iconURL: './static/icons/icon-expenses.png',
+    iconURL: './static/icons/icon-compare.svg',
     title: 'EXPENSES',
-    isIncluded: true,
+    isIncluded: false,
     features: [
       'Mobile OCR expense creation and file upload',
       'Employer approvals',
@@ -25,7 +25,7 @@ export default [
     ],
   },
   {
-    iconURL: './static/icons/icon-legal.png',
+    iconURL: './static/icons/icon-brain.svg',
     title: 'LEGAL',
     isIncluded: false,
     features: [
@@ -37,7 +37,7 @@ export default [
     ],
   },
   {
-    iconURL: './static/icons/icon-accounting.png',
+    iconURL: './static/icons/icon-culture.svg',
     title: 'ACCOUNTING',
     isIncluded: false,
     features: [
@@ -50,7 +50,7 @@ export default [
     ],
   },
   {
-    iconURL: './static/icons/icon-cosec.png',
+    iconURL: './static/icons/icon-merge.svg',
     title: 'COMPANY SECRETARIAL',
     isIncluded: false,
     features: [
@@ -61,7 +61,7 @@ export default [
     ],
   },
   {
-    iconURL: './static/icons/icon-payroll.png',
+    iconURL: './static/icons/icon-talk.svg',
     title: 'PAYROLL',
     isIncluded: false,
     features: [
