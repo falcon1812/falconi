@@ -34,6 +34,8 @@ const analyticsScript = `!function(){var analytics=window.analytics=window.analy
 // Chat
 const chat = `window.$crisp=[];window.CRISP_WEBSITE_ID="dce53f8c-b3c4-44c1-982b-47a8b918db77";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();`;
 
+const hotjar = `(function(h,o,t,j,a,r){ h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)}; h._hjSettings={hjid:648760,hjsv:6}; a=o.getElementsByTagName('head')[0]; r=o.createElement('script');r.async=1; r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv; a.appendChild(r); })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');`
+
 export default class MyDocument extends Document {
 
   static getInitialProps ({ renderPage }) {
@@ -65,6 +67,7 @@ export default class MyDocument extends Document {
         <body className="gc-body">
           <script type='application/ld+json' dangerouslySetInnerHTML={{ __html: structuredData }} />
           <script type='text/javascript' dangerouslySetInnerHTML={{ __html: chat }} />
+          <script type='text/javascript' dangerouslySetInnerHTML={{ __html: hotjar }} />
           <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
           <Main />
           <NextScript />
