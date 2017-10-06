@@ -6,7 +6,6 @@ import Who from 'components/Who/Who';
 import What from 'components/What/What';
 import How from 'components/How/How';
 import Services from 'components/Services/Services';
-import Packages from 'components/Packages/Packages';
 import CustomerTypes from 'components/CustomerTypes/CustomerTypes';
 import Testimonials from 'components/Testimonials/Testimonials';
 import Team from 'components/Team/Team';
@@ -17,11 +16,11 @@ import Calendar from 'components/Calendar/Calendar';
 const nav = {
   home      : { id: 'home',      label: 'Home' },
   how       : { id: 'how',       label: 'How we help you' },
-  packages  : { id: 'packages',  label: 'Packages' },
+  services  : { id: 'services',  label: 'Services' },
   customers : { id: 'customers', label: 'Customers' },
   calendar  : { id: 'calendar',  label: 'Calendar' },
   team      : { id: 'our-team',  label: 'Our team' },
-  about     : { id: 'about',     label: 'About G' },
+  about     : { id: 'about',     label: 'About' },
 };
 
 export default class App extends Component {
@@ -48,10 +47,8 @@ export default class App extends Component {
         <Who/>
         <What/>
         <How id={nav.how.id} />
-        <Services/>
-        <Packages id={nav.packages.id} />
+        <Services id={nav.services.id} />
         <CustomerTypes id={nav.customers.id} />
-        <Testimonials />
         <Calendar id={nav.calendar.id} />
         <Team id={nav.team.id} />
         <About id={nav.about.id} />

@@ -4,8 +4,8 @@ const CORE_HOST = APP_HOST;
 
 export const LINKS = {
 
-  LOGIN                : `${CORE_HOST}/user/login`,
-  SIGNUP               : `${NEXT_HOST}/signup`,
+  BOOK                 : `https://calendly.com/falconi/20min`,
+  GITHUB               : `https://github.com/falconi1812/falconi`,
 
   TERMS_AND_CONDITIONS : `${NEXT_HOST}/terms-and-conditions-of-website-use`,
   TERMS_OF_SERVICE     : `${NEXT_HOST}/terms-of-service`,

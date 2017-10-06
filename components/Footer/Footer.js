@@ -52,8 +52,8 @@ class SiteNav extends Component {
               </address>
 
               <div className="col-md-3 col-xs-12 col-md-offset-1 gc-copyright">
-                <a href={LINKS.GRANT_THORNTON} target="_blank" rel="noopener">
-                  <img alt=" " src="/static/logos/logo-gt.png" />
+                <a href={LINKS.GITHUB} target="_blank" rel="noopener">
+                  <img alt=" " src="/static/logos/logo-github.png" />
                 </a>
                 <p>Copyright @ 2017   UK LLP. All rights reserved.</p>
               </div>
