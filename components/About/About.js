@@ -1,6 +1,36 @@
 import React, { Component } from 'react';
 import { LINKS } from 'config';
 
+import { I18n } from 'react-i18next';
+import i18next from 'i18next';
+ // initialized i18next instance using reactI18nextModule
+
+
+ i18next
+  .init({
+    debug: false,
+    resources: {
+      en: {
+        namespace1: {
+          key: 'hello from namespace 1'
+        },
+        namespace2: {
+          key: 'hello from namespace 2'
+        }
+      },
+      de: {
+        namespace1: {
+          key: 'hallo von namespace 1'
+        },
+        namespace2: {
+          key: 'hallo von namespace 2'
+        }
+      }
+    }
+  });
+
+
+
 export default class About extends Component {
 
   onClickFindOutMoreButton = () =>

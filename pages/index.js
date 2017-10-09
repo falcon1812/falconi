@@ -12,6 +12,7 @@ import Team from 'components/Team/Team';
 import About from 'components/About/About';
 import Footer from 'components/Footer/Footer';
 import Calendar from 'components/Calendar/Calendar';
+import i18n from 'components/i18next/i18next'
 
 const nav = {
   home      : { id: 'home',      label: 'Home' },
@@ -53,6 +54,7 @@ export default class App extends Component {
         <Team id={nav.team.id} />
         <About id={nav.about.id} />
         <Footer nav={nav} />
+        <i18n />
       </main>
     )
   }
