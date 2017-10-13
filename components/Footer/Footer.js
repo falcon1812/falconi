@@ -42,11 +42,9 @@ class SiteNav extends Component {
               <address className="col-md-2 col-xs-6 p-a-0">
                 <span>Contact Info</span>
                 <ul>
-                  <p>falconi UK Limited,</p>
-                  <p>110 Queen Street,</p>
-                  <p>Glasgow,</p>
-                  <p>G1 3BX</p>
-                  <p>0141 223 0700</p>
+                  <p>Falconi Limited,</p>
+                  <p>Dublin,</p>
+                  <p>Ireland.</p>
                   <p><a href="mailto:info@falconi.com?Subject=Information request" className="gc-anchor pink">info@falconi.com</a></p>
                 </ul>
               </address>
@@ -55,7 +53,7 @@ class SiteNav extends Component {
                 <a href={LINKS.GITHUB} target="_blank" rel="noopener">
                   <img alt=" " src="/static/logos/logo-github.png" />
                 </a>
-                <p>Copyright @ 2017   UK LLP. All rights reserved.</p>
+                <p>We support open source project like this website.</p>
               </div>
             </div>
         </div>

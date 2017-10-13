@@ -4,7 +4,7 @@ import { LINKS } from 'config';
 export default class What extends Component {
 
   onClickJoinUs = (e) =>
-    analytics.track("Link Join Us Free Today Requested", { platform: "www"});
+    analytics.track("Link Join Us Free Today", { platform: "www"});
 
   render () {
     return (
@@ -14,17 +14,14 @@ export default class What extends Component {
             <div className="flex">
               <h2 className="gc-section-title">What we do</h2>
               <p className="gc-section-content">
-                Put simply, we give you time back, by setting you free from admin chores. Our services include accounting, expenses, team management, legal, HR, payroll and company secretarial – and we’re adding new services all the time. Our technology brings these services together in one place. We do the work, but you stay in control, with access any time, wherever you are.
-              </p>
-              <p className="gc-section-content">
-                Many small businesses are already experiencing the advantages of falconi. You can join them, and benefit from some of our services for free. It’s also <a href={LINKS.SIGNUP} onClick={this.onClickJoinUs} target="_blank" rel="noopener">free to sign up</a> so start experiencing falconi today.
+                  Once we understand your problem, we would tell you everything we know of how to solved and why it could be a good idea plus any benefits you could get from it. We want you too know that even if we do not have a solution we would try to find one.
               </p>
               <a href={LINKS.BOOK} onClick={this.onClickJoinUs} target="_blank" rel="noopener">
                 <button className="gc-button try-for-free gc-button-sm">talk with us free today</button>
               </a>
             </div>
             <div className="image">
-              <img alt="falconi platform preview" className="img-responsive" src="/static/images/what-we-do.svg" />
+              <img alt="falconi image" className="img-responsive" src="/static/images/what-we-do.svg" />
             </div>
           </div>
         </div>

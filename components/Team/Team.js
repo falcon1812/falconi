@@ -9,8 +9,7 @@ export default class Team extends Component {
           <div className="col-md-10 col-md-offset-1 aligner-center m-b-80 p-a-0">
             <h2 className="gc-section-title">Your team</h2>
             <p className="gc-section-content m-b-0">
-              Our UK-based specialists become an extension of your team, bringing to your business their expert knowledge of accounting, legal, HR, payroll and company secretarial requirements.
-              As your business grows, their support can grow with it – without you having to worry about recruiting, and at a pace you’re comfortable with.
+              Our specialists become an extension of your team, bringing to your problems any kind of way to solved. They have years of experience on IT, multiple companies and solutions.
             </p>
           </div>
         </div>
