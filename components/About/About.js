@@ -20,15 +20,15 @@ export default class About extends Component {
                 <img alt="Github" src="/static/logos/logo-g-transparent.png" />
               </div>
               <span className="title">Where growth happens.</span>
-              <p>G brings together  ’s services for small businesses by providing access to tools, connections and services that help them achieve their ambitions.</p>
+              <p>We support open source project and we want to see the them growth as much as possible.</p>
 
-              <a href={LINKS.GRANT_THORNTON_G} onClick={this.onClickFindOutMoreButton} target="_blank" rel="noopener">
+              <a href={LINKS.GITHUB} onClick={this.onClickFindOutMoreButton} target="_blank" rel="noopener">
                 <button className="gc-button">Find out more</button>
               </a>
             </div>
 
             <div className="flex gc-image-container">
-              <img className="img-responsive full-width" alt="G Service" src="/static/images/front-end-conftocat.png" />
+              <img className="img-responsive full-width" alt="Front end cool guy" src="/static/images/front-end-conftocat.png" />
             </div>
           </div>
 

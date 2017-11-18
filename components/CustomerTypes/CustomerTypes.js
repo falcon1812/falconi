@@ -62,10 +62,6 @@ export default class CustomerTypes extends PureComponent {
                 <h3 className="gc-customer-title">{customerType.title}</h3>
                 <p className="gc-customer-desc">{customerType.shortDesc}</p>
 
-                <button className={`gc-button ${(this.isCustomerSelected(index)) ? 'gc-button-active' : ''}`} onClick={() => this.onCustomerClick(index, customerType.title)}>
-                  { (this.isCustomerSelected(index)) ? 'CLOSE' : 'FIND OUT MORE' }
-                </button>
-
                 <div className={`col-xs-12 m-b-30 gc-customer-long-desc ${(this.isCustomerSelected(index)) ? 'visible-sm visible-xs' : 'hidden'}`}>
                   <CustomerDescription key={`story-${index}`} content={(this.isCustomerSelected(index)) ? customerType.longDesc : []} customerType={this.state.selectedText} />
                 </div>

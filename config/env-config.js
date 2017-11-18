@@ -11,8 +11,7 @@
 const BRANCH = process.env.BB_PROJECT_BRANCH || 'dev';
 
 const HOSTS = {
-  dev    : 'https://dev.falconi.com',
-  master : 'https://go.falconi.com'
+  dev    : 'https://falconi.herokuapp.com'
 };
 
 const APP_HOST = HOSTS[BRANCH.trim()] || HOSTS['dev'];

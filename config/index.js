@@ -11,8 +11,6 @@ export const LINKS = {
   TERMS_OF_SERVICE     : `${NEXT_HOST}/terms-of-service`,
   PRIVACY              : `${NEXT_HOST}/privacy`,
 
-  GRANT_THORNTON       : 'http://www.dsf.co.uk/',
-  GRANT_THORNTON_G     : 'http://g.sdf.co.uk/',
   BLOG                 : 'http://blog.falconi.com/',
   SUPPORT              : 'http://support.falconi.com/',
   TWITTER              : 'https://twitter.com/falconibusiness',
